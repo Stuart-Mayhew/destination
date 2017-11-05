@@ -1,0 +1,244 @@
+/*universal rules*/
+
+html, body {
+  font-family: helvetica, sans-serif;
+  font-size: 16px;
+  background-color: rgb(242, 242, 242);
+}
+
+h1, h2 {
+  color: #1D5837;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+h3, h4 {
+  color: #2E8B57;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+a, p {
+    font-family: 'Open Sans', sans-serif;
+}
+.fa:hover, a:hover {
+  color: #2E8B57;
+}
+/*header rules*/
+.header {
+  background-color: #2E8B57;
+  min-height: 80px;
+}
+.logo {
+  display: inline-block;
+  margin-top: 10px;
+}
+.header .logo-img {
+  width: 80px;
+  margin-top: 0;
+}
+#logo-text {
+  color: white;
+  display: inline-block;
+  margin-top: 0;
+  position: relative;
+  top: 0.25rem;
+}
+.header .search {
+  margin: 25px 0 0 0;
+  float: right;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.header .search-form input {
+  box-shadow: none;
+  border: none;
+  border-bottom: solid white 1px;
+  background-color: transparent;
+  margin: 0 5px 0 0;
+  width: 210px;
+  padding: 2px;
+  color: #88D7AB;
+}
+.header .search-form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #699E80;
+}
+.header .search-form input::-moz-placeholder { /* Firefox 19+ */
+  color: #699E80;
+}
+.header .search-form input:-ms-input-placeholder { /* IE 10+ */
+  color: #699E80;
+}
+.header .search-form input:-moz-placeholder { /* Firefox 18- */
+  color: #699E80;
+}
+.header .search-form input:hover {
+  box-shadow: transparent;
+  border: transparent;
+  border-bottom: #1D5837 1px solid;
+}
+.header .search-form input:focus {
+  box-shadow: none;
+  border: transparent;
+  outline-color: #1D5837;
+}
+.search-btn {
+  background-color: transparent;
+  border: transparent;
+  border-bottom: white 1px solid;
+  color: white;
+  padding: 2px 5px;
+}
+.search-btn:focus {
+  outline-color: #1D5837;
+  border: none;
+}
+
+.menu {
+  background-color: #1D5837;
+}
+.tab  {
+  display: inline-block;
+  float: left;
+  margin: 0 2px;
+}
+.nav a {
+  color: white;
+}
+.nav .tab:hover, .nav .tab:focus {
+  background-color: #2E8B57;
+}
+.nav .active {
+  background-color: #2E8B57;
+}
+
+@media (max-width:600px) {
+  .menu .container {
+    padding: 0;
+  }
+  .header {
+    text-align: center;
+  }
+  .search {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .nav .tab {
+    width: 100%;
+    text-align: center;
+  }
+}
+/*main rules*/
+#body {
+  margin: 0;
+  width: 100%;
+}
+.main {
+  background-color: white;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.tag {
+  background-color: #1D5837;
+  float: right;
+  position: relative;
+  padding: 0.25rem 15px;
+  bottom: 0.25rem;
+  left: 15px;
+}
+.tag h4 {
+  color: white;
+}
+.article {
+  margin-bottom: 2rem;
+}
+.article-info {
+
+}
+.article-date {
+  font-size: 12px;
+  margin: 0;
+  height: 35px;
+  display: flex;
+  align-items: flex-end;
+}
+.article-links{
+  font-size: 12px;
+  margin: 0;
+  text-align: right;
+}
+.main img {
+  max-width: 100%;
+  height: auto;
+}
+/*supporting rules*/
+.supporting {
+  background-color: #F2F2F2;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.supporting .news-events div {
+  padding: 0.25rem 40px 30px;
+}
+.supporting .news {
+  background-color: white;
+}
+.supporting .events {
+  background-color: #1D5837;
+  color: white;
+}
+.news-events .text {
+  font-size: 20px;
+  display: inline;
+  padding-bottom: 1px;
+  border-bottom: 3px solid #2E8B57;
+}
+.events .text {
+  border-bottom: 3px solid #2E8B57;
+  color: white;
+}
+.events h3{
+  color: #88D7AB;
+}
+.news-events .date {
+  margin: 15px 0 10px 0;
+  font-weight: 300;
+}
+.supporting .conference {
+  margin: 0;
+  padding: 0;
+}
+.supporting img {
+  width: 100%;
+  margin: 40px 0;
+}
+/*footer rules*/
+footer {
+  background-color: #000000;
+  min-height: 80px;
+  color: white;
+  padding: 2rem;
+}
+footer .container {
+  padding: 30px 20px;
+}
+footer .links {
+  list-style: none;
+  padding: 20px;
+  display: inline;
+}
+footer .link {
+  display: inline;
+  padding-right: 30px;
+}
+footer .copy {
+  float: right;
+  padding: 0;
+}
+
+@media print {
+body {-webkit-print-color-adjust: exact;}
+}
